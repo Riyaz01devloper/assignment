@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+html,
+body {
+  margin: 0;
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      #1a1a1a 0%,
+      #050505 45%,
+      #000000 100%
+    );
+  color: white;
+  overflow-x: hidden;
+}
