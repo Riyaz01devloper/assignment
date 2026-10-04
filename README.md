@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Scroll-Driven Hero Animation
 
-## Getting Started
+A responsive scroll-driven hero section built with Next.js, TypeScript, Tailwind CSS, and GSAP.
 
-First, run the development server:
+The project recreates a premium hero animation where the main visual responds directly to the user's scroll position.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Live Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[View Live Demo](YOUR_VERCEL_URL)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## GitHub Repository
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+https://github.com/Riyaz01devloper/scroll-driven-hero
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- Scroll-driven hero animation
+- GSAP ScrollTrigger integration
+- Smooth scroll-based object movement
+- Responsive design for mobile, tablet, and desktop
+- Animated headline on page load
+- Staggered statistics animation
+- Transform-based animations for better performance
+- Clean and reusable React component structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- GSAP
+- GSAP ScrollTrigger
+- HTML5
+- CSS3
 
-## Deploy on Vercel
+## Animations
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Initial Load
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The headline fades in with a slight upward movement.
+
+The statistics appear sequentially using a staggered animation.
+
+### Scroll Interaction
+
+The main visual responds to the user's scroll position.
+
+As the user scrolls, the visual:
+
+- Moves horizontally
+- Moves vertically
+- Scales smoothly
+- Rotates slightly
+
+The animation uses GSAP ScrollTrigger with `scrub` so the animation remains connected to the scroll position.
+
+## Responsive Design
+
+The layout adapts to different screen sizes:
+
+- Mobile
+- Tablet
+- Laptop
+- Desktop
+
+The statistics change from a four-column layout on larger screens to a two-column layout on mobile devices.
+
+## Project Structure
+
+```text
+scroll-driven-hero/
+│
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   └── Hero.tsx
+│
+├── public/
+│   └── images/
+│       └── image.png
+│
+├── package.json
+├── tsconfig.json
+├── next.config.ts
+└── README.md
