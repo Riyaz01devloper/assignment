@@ -6,7 +6,7 @@ The project recreates a premium hero animation where the main visual responds di
 
 ## Live Demo
 
-[View Live Demo](YOUR_VERCEL_URL)
+[View Live Demo](https://assignment-lake-five.vercel.app/)
 
 ## GitHub Repository
 
